@@ -1,0 +1,226 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="displayNum(0)">0</button>
+    <button onclick="displayNum(1)">1</button>
+    <button onclick="displayNum(2)">2</button>
+    <button onclick="displayNum(3)">3</button>
+    <button onclick="displayNum(4)">4</button>
+    <button onclick="displayNum(5)">5</button>
+    <button onclick="displayNum(6)">6</button>
+    <button onclick="displayNum(7)">7</button>
+    <button onclick="displayNum(8)">8</button>
+    <button onclick="displayNum(9)">9</button> -->
+
+
+
+
+    <br>
+    <main id="main">
+        <button onclick="check()">
+            click Here
+        </button>
+        <p id="mytext"></p>
+
+    </main>
+
+
+    <button onclick="displayNum(7)">7</button>
+    <button onclick="displayNum(7)">8</button>
+    <button onclick="displayNum(7)">9</button>
+    <button onclick="displayNum(7)">0</button>
+
+</body>
+</html>
+
+
+<script>
+
+
+// array methods in javascript  
+const testt = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+console.log(testt.toLocaleString());
+console.log(testt.join(" "))
+
+
+const test2 = ["bananna", "Apple", "Orange", "pineapple", "watermelon", "carrot"];
+console.log(test2.pop());
+console.log(test2);
+console.log(test2.push("strawberry"));
+console.log(test2);
+test2.shift();
+console.log(test2)
+test2.unshift("guava")
+console.log(test2);
+
+test2[3] = "paw-paw";
+console.log(test2);
+
+test2 [test2.length] = "fish"
+console.log(test2);
+
+const testt3 = [1, 2, 3, 4, 5];
+const  testtt4 = [6, 7, 8, 9, 0];
+const  testt5 = test3.concat(text4); 
+console.log(test5);
+     
+const testt6 = ["chealse", " liverpool", "Arselan", "Realmadrid", "barcelona", "athletico de mardrid"]
+const testt7 = test6.slice(3);
+console.log(test7);
+const testt8 = test6.slice(0, 3);
+
+const testt9 = ["blue", "red", "gray", "black", "violent", "white", "Brown" ];
+test9.splice(3, 1, "Green", "indigo", "nude");
+
+const testt10 = ["beans", "rice", "beans", "spaghetti", "yam", "potatoe"];
+test10.splice(2, 1);
+console.log(testt10);
+
+
+// Array and object destructuring in javascript.
+let testt11 = ["Nana", "Semilore", "Obinna", "Dara", "Pelumi",];
+ let [Nana, Semilore, Obina, Dara, Pelumi] = testt11;
+ console.log(Pelumi);
+
+ const ram = {
+    name: "ram",
+    age: 1111,
+    isFood: true,
+    ispet: false, 
+    color: "white"
+ }
+
+ let {name, age, color} = ram 
+ console.log(color)
+
+
+//  assiginment 
+//  read about Array hytration & local storage 
+
+//  spread operators
+let arr1 = [1, 2, 3, 4, 5];
+let arr2= [...arr1, 6, 7, 8, 9, 0];
+console.log(arr2);
+
+let obj1 = {name: "test", age: 5555, color: "black"}
+let obj2 = {...obj1, isBig: undefined, club: "liverpool"};
+console.log(obj2)
+
+    let main = document.getElementById("main")
+    let mytext = document.getElementById("mytext")
+
+    function check(){
+        let usertext = prompt("please type a sentence")
+        mytext.innerHTML += `your string to uppercase is ${usertext.toLocaleUpperCase()} <br>`
+        mytext.innerHTML += `your string to lowercase is ${usertext.toLocaleLowerCase()} <br>`
+        mytext.innerHTML += `your string to lengh is ${usertext.length} <br>`
+        mytext.innerHTML += `the index of A in your string is ${usertext.indexOf("a")} br`
+
+
+
+    }
+    
+
+
+    // Number methods in Javascript
+    let num1 = 43;
+    let test = num1.toString
+    console.log(typeof test)
+
+
+    // let num9 = 50;
+    // let pil = num9.toString
+    console.log(typeof pil )
+
+
+    // This method converts the num2 to standard form 
+    let num2 = 967.53777
+    console.log(num2.toExponential(3))
+
+    // Decimal to number 
+let num3 = 56748
+console.log(num3.toFixed(2))
+
+// To change numbers to decimal numbers 
+console.log(num2.toPrecision)
+
+// To change numbers to desired number without decimal
+console.log(num2.toPrecision)
+
+// To return numbers with numbers
+console.log((234.56).valueOf)
+
+// To retun numbers with a whole value.
+console.log(parseFloat("533.45(1)"))
+console.log(parseInt(45))
+
+
+let a = "when candles are out,";
+let b = "all cats are grey.";
+let c = a.concat('', b)
+console.log(c)
+
+
+let paul = "i love you";
+let peter = "i love you too";
+let pp = paul.concat('', peter)
+console.log(pp);
+
+
+let sentence = 'it can only be God';
+console.log(sentence.toLowerCase());
+
+console.log(sentence.toUpperCase());
+
+
+let sen = "always look at the bright side of life";
+sen.includes("look up");
+sen.includes('look on');
+let son = sen.includes('look at'); 
+let sim = sen.includes('fkyto');
+console.log(son); 
+console.log(sim);
+
+let me = 'i am strong'
+let me2 = 'i am strong  o'
+let me4 = ' i am strong'
+
+me === me2
+me === me4
+console.log(me2);
+// Assignment: submit a wirteup on  string methods in javascript to ogunbaja24@gmail.com 
+
+
+// // toUpperCase() method 
+// console.log(test2.toUppercase()); 
+
+// // toLowerCase() method
+// let test3 = "chelsea|ManUnited|Arsenal|RealMadrid|Barcelona";
+// console.log(test3.split("|"));
+
+
+
+// // concat() method
+// let test4 = "chelsea";
+// let test5 = "ManU"; 
+// let test6 = "Arsenal";
+// console.log(test4.concat(test5, test6));
+
+// // trikm()
+// let test7 = "testRAm";
+// console.log(test7)
+// console.log(test7.trim());
+
+// // trimStart()
+// console.log(test7.trimStart());
+
+// trimEnd()
+// console.log(test7.trimEnd());
+
+</script>
+</html> -->

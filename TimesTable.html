@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <style> 
+    .pool {
+        height: 100%;
+        background-color: aquamarine;
+        width: 20%;
+        border-radius: 5px;
+        padding: 20px;
+        justify-content: center;
+        margin-left: 30%;
+    } 
+    </style>
+
+    <div class="pool">
+        <input type="text" id="co">
+        <input type="text" id="cc"> 
+        <button onclick="cos()">Show Result<table></table></button>
+        <p id="p1"></p>
+    
+        
+    </div>
+    
+</body>
+<script>
+    let input1 = document.getElementById("co")
+    let input2 = document.getElementById("cc")
+    let p1 = document.getElementById("p1")
+
+    function cos(){
+        for ( let index = 0; index <= input2.value; index ++){
+            p1.innerHTML += `${input1.value} X ${[index]} = ${input1.value * [index]} <br>` 
+        }
+    }
+</script>
+
+

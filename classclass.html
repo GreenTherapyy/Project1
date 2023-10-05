@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.2.1-dist/css/bootstrap-grid.min.css  ">
+</head>
+<body>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+<input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+
+    
+</body>
+</html>
+
+<script>
+//     // Array methods in javascript 
+// const test = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+// console.log(test.toLocaleString());
+
+// console.log(test.join( " "))
+
+// const test2 = ["banana", "Apple", "Orange", "Pineapple", "water melon", "carrot"];
+// console.log(test2.pop());
+// console.log(test2);
+// console.log(test2.push("strawberry", "Mango"));
+// console.log("test2");
+// test2.shift("banana");
+// console.log(test2);
+// test2.shift("Banana");
+// console.log(test2);
+// test2.unshift("Guava");
+// console.log(test2);
+
+// test[3] = "paw-paw";
+// console.log(test2);
+// test2[test2.length] = "fish"
+// console.log(test2);
+
+// const test3 = [1, 2, 3, 4, 5];
+// const test4 = [6, 7, 8, 9, 0];
+// const test6 = [11, 12, 13, 14,];
+// const test5 = test3.concat(test4, test6)
+// console.log(test5);
+
+// const test7 = ["chelsea", "liverpool", "Arsenal", "Real Madrid", "barcelona", "Athetico de mardrid"];
+// const test8 = test7.slice(0, 3);
+// console.log(test9);
+
+// Array interation method 
+const arr1 = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+arr1.forEach((item, index)=>{
+    console.log(item * 3)
+})
+
+let test = arr1.map((item, index)=>{
+    return item *5
+})
+
+console.log(test)
+
+let test2 =  arr1. filler((item, index)=>{
+    return total + item
+},0)
+console.log(test4)
+
+const arr2 = [
+
+        {name: "test", age: 1110},
+        {name: "test", age: 1111},
+        {name: "test", age: 1112},   
+        {name: "test", age: 1113},
+        {name: "test", age: 1114},
+        {name: "test", age: 1115},
+        {name: "test", age: 1116},
+        {name: "test", age: 1117},
+        {name: "test", age: 1118},
+]
+
+let sum = arr2.reduce((total, item)=>{
+    return total + item.age
+},0)
+console.log(sum)
+
+
+// localStorage in javascript
+
+ let testArr = [
+    {name: "testRam1", age: 1111, color: "Grey"},
+    {name: "testRam1", age: 1112, color: "Black"},
+    {name: "testRam1", age: 1113, color: "White"},
+    {name: "testRam1", age: 1114, color: "Blue"},
+    {name: "testRam1", age: 1115, color: "Green"},
+    {name: "testRam1", age: 1116, color: "purple"},
+ ]
+
+ let stringArr = JSON.stringify(testArr);
+ localStorage.setItem("testArr", stringArr);
+ let newTest = localStorage.getItem("testArr");
+ let testArr2 = JSON.parse(newTest);
+ console.log(testArr2)
+ 
+
+</script>
